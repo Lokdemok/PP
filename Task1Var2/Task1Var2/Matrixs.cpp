@@ -11,7 +11,7 @@ MatrixData::MatrixData()
 		basicMatrix[i].resize(size);
 		for (size_t j = 0; j != size; ++j)
 		{
-			basicMatrix[i][j] = rand() % 9 + 1;
+			basicMatrix[i][j] = float(rand() % 9 + 1);
 		}
 	}
 	minorsMatrix.resize(size);

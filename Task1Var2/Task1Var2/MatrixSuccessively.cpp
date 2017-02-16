@@ -6,7 +6,7 @@ using namespace std;
 CMatrixInverseSuccessively::CMatrixInverseSuccessively(std::vector<std::vector<float>> matrix)
 	:m_baseMatrix(matrix)
 {
-		m_matrixSize = matrix.size();
+		m_matrixSize = int(matrix.size());
 }
 
 
