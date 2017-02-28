@@ -28,7 +28,7 @@ int main(int argc, char * argv[])
 	vector<vector<float>> matrix1;
 	vector<vector<float>> matrix2;
 	MatrixData matrixData;
-	size_t threadsCount = 1;
+	size_t threadsCount = 2;
 	cout << "Inverse Matrix Parallel" << endl;
 	unsigned int  start_time = clock();
 	CMatrixInverseParallel matrixInverseParallel(threadsCount, matrixData);
@@ -45,6 +45,7 @@ int main(int argc, char * argv[])
 	end_time = clock();
 	search_time = end_time - start_time;
 	cout << "time proccess Successively: " << float(search_time) / 1000 << endl << endl << endl;
+	system("pause");
 	return 0;
 }
 
